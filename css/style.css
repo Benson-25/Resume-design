@@ -1,0 +1,409 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*::before,*::after{
+	box-sizing:border-box
+}
+.wrap{
+	width: 1025px;
+	margin:auto;
+	background: #fafafa;
+  font-family: MicrosoftJhengHeiBold;
+}
+.header{
+	display: flex;
+	position: relative;
+}
+.photo{
+	position: absolute;
+	left: 135px;
+	bottom: 25px;
+}
+.photo h1{
+	text-align: center;
+	padding-top: 11px;
+	font-size: 42px;
+	color: #000000;
+}
+.photo h2{
+	padding-top: 8px;
+	text-align: center;
+	font-size: 14px;
+	color: #4A4A4A;
+}
+.information{
+	position: absolute;
+	right: 380px;
+	top: 110px;
+}
+.information li{
+	display: flex;
+	align-items: center;
+	padding-bottom:30px;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.information img{
+	padding-right: 12px;
+}
+.content{
+	padding-top: 130px;
+	text-align: center;
+	margin-bottom: 56px;
+}
+.content h3{
+	padding-bottom: 48px;
+	font-size: 24px;
+	color: #1736DC;
+}
+.content-item{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.content-item h4{
+	padding-top: 25px;
+	padding-bottom: 26px;
+	font-size: 18px;
+	color: #4A4A4A;
+}
+.content-item ul{
+	padding-bottom: 35px;
+}
+.content-item li{
+	font-size: 10px;
+	color: #4A4A4A;
+	line-height: 18px;
+	list-style-type: disc;
+	list-style-position: inside;
+	text-align: left;
+	padding-right: 21px;
+	padding-left: 45px;
+}
+.content-item-1{
+	width:284px;
+	background: #FFFFFF;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
+	border-radius: 6px;
+	margin-right: 17px;
+}
+.content-item-2{
+	width:284px;
+	background: #FFFFFF;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
+	border-radius: 6px;
+}
+.content-item-3{
+	width:284px;
+	background: #FFFFFF;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
+	border-radius: 6px;
+	margin-left: 17px;
+}
+.color{
+	background: #F58D23;
+	position:absolute;
+	bottom:-1px;
+	width: 284px;
+	height: 6px;
+	border-radius: 0px 0px 6px 6px;
+}
+.color-2{
+	position:absolute;
+	background:#539E43;;
+	width: 284px;
+	height: 6px;
+	border-radius: 0px 0px 6px 6px;
+	bottom:-1px;
+}
+.color-3{
+	background:#6762A6;
+	width: 284px;
+	height: 6px;
+	border-radius: 0px 0px 6px 6px;
+	position:absolute;
+	bottom:-1px;
+}
+h5{
+	text-align: center;
+	font-size: 24px;
+	color: #1736DC;
+	padding-bottom: 48px;
+}
+.graph{
+	width: 1024px;
+	height: 590px;
+}
+.graph-1{
+	text-align: center;
+	position: relative;
+}
+.wire{
+	background: #D8D8D8 ;
+	width: 2px;
+	height: 514px;
+	position: absolute;
+	right: 511px;
+	top:1px;
+}
+.wire-1{
+	background: #D8D8D8;
+	border-radius: 2px;
+	width: 46px;
+	height: 4px;
+	position: absolute;
+	right: 489px;
+	bottom:-479px;
+}
+.box-1{
+	position: absolute;
+	right: 500px;
+	top: 85px;
+}
+.box-2{
+	position: absolute;
+	right: 500px;
+	top: 228px;
+}
+.box-3{
+	position: absolute;
+	right: 500px;
+	top: 371px;
+}
+.content-graph{
+	background: #FFFFFF;
+	border: 1px solid #FB56BF;
+	border-radius: 10px;
+	width: 260px;
+	height: 136px;
+	position: absolute;
+	right:230px;
+	top: 85px;
+	text-align: left;
+	padding-left: 12px;
+}
+.content-graph-2{
+	background: #FFFFFF;
+	border: 1px solid #FB56BF;
+	border-radius: 10px;
+	width: 260px;
+	height: 136px;
+	position: absolute;
+	left: 230px;
+	top:225px;
+	text-align: right;
+	padding-right: 12px;
+}
+.content-graph-3{
+	background: #FFFFFF;
+	border: 1px solid #FB56BF;
+	border-radius: 10px;
+	width: 260px;
+	height: 136px;
+	position: absolute;
+	right: 230px;
+	top:370px;
+	text-align: left;
+	padding-left: 12px;
+}
+h6{
+	font-size: 12px;
+	color: #4A4A4A;
+	letter-spacing: 0.53px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+h1{
+	font-size: 12px;
+	color: #8A1737;
+	letter-spacing: 0.53px;
+}
+p{
+	font-size: 12px;
+	color: #4A4A4A;
+	letter-spacing: 0.53px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+}
+span{
+	font-size: 10px;
+	color: #9B9B9B;
+	letter-spacing: 0.44px;
+	line-height: 18px;
+}
+.title{
+	font-size: 24px;
+	color: #FB56BF;
+	text-align: center;
+	margin-top: 56px;
+	margin-bottom: 46px;
+}
+.menu{
+	display: flex;
+	justify-content: center;
+}
+.menu h3{
+	font-size: 14px;
+	color: #000000;
+	padding-top: 9px;
+	padding-left: 8px;
+}
+.menu p{
+	font-size: 14px;
+	color: #4A4A4A;
+	padding-top: 7px;
+	padding-left: 8px;
+}
+.menu-1{
+	background: #FFFFFF;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.40);
+	border-radius: 4px;
+	margin-right: 16px;
+	width: 284px;
+	height: 213px;
+	position: relative;
+	overflow:hidden;
+}
+.menu-1 a{
+	position: absolute;
+	top:37px;
+	left:80px;
+}
+.menu-1-1{
+	background: palevioletred;
+	width:284px;
+	height:150px;
+}
+.menu-2{
+	background: #FFFFFF;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.40);
+	border-radius: 4px;
+	margin-right: 16px;
+	width: 284px;
+	height: 213px;
+	position: relative;
+}	
+.menu-2 a{
+	position: absolute;
+	top:35px;
+	left:102px;
+}
+.menu-2-2{
+	background: #424242;
+	width:284px;
+	height:150px;
+}
+.menu-3{
+	background: #FFFFFF;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.40);
+	border-radius: 4px;
+	margin-right: 16px;
+	width: 284px;
+	height: 213px;
+	position:relative;
+}
+.menu-3 a{
+	position:absolute;
+	top:35px;
+	left:102px;
+}
+.menu-3-3{
+	background: #8AD7FA;
+	width:284px;
+	height:150px;
+}
+.menu-1:hover{
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.218);
+	cursor: pointer;
+}
+.menu-2:hover{
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.218);
+	cursor: pointer;
+}
+.menu-3:hover{
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.218);
+	cursor: pointer;
+}
+h4{
+	font-size: 24px;
+	color: #FB56BF;
+	text-align: center;
+	padding-top: 99px;
+	padding-bottom: 49px;
+}
+.about{
+	display: flex;
+	margin-bottom: 74px;
+}
+.about img{
+	width: 260px;
+	height: 335px;
+	margin-left: 176px;
+}
+.about ul{
+	margin-left:44px;
+	margin-right: 102px;
+}
+.about p{
+	font-size: 14px;
+	color: #4A4A4A;
+	line-height: 26px;
+}
+.footer{
+	background-image: url(https://hexschool.github.io/HTML_sketch_export/assets/img-Looper-bg.png);
+	width: 1024px;
+	height: 87px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer h5{
+	font-size: 16px;
+	color: #000000;
+	padding-top: 48px;
+}
