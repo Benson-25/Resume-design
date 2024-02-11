@@ -53,40 +53,43 @@ table {
 	width: 1025px;
 	margin:auto;
 	background: #fafafa;
-  font-family: MicrosoftJhengHeiBold;
 }
 .header{
+	background-image: url(https://hexschool.github.io/HTML_sketch_export/assets/img-headerShape.png);
+	height: 399px;
 	display: flex;
-	position: relative;
+	justify-content: space-evenly;
+	padding-top: 130px;
+	padding-right: 100px;
 }
 .photo{
-	position: absolute;
-	left: 135px;
-	bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
 }
 .photo h1{
-	text-align: center;
 	padding-top: 11px;
+	font-family: MicrosoftJhengHeiRegular;
 	font-size: 42px;
 	color: #000000;
 }
 .photo h2{
 	padding-top: 8px;
-	text-align: center;
+	font-family: MicrosoftJhengHeiRegular;
 	font-size: 14px;
 	color: #4A4A4A;
 }
 .information{
-	position: absolute;
-	right: 380px;
-	top: 110px;
+	padding-right: 80px;
 }
-.information li{
+.information li a{
 	display: flex;
 	align-items: center;
+	font-family: MicrosoftJhengHeiRegular;
 	padding-bottom:30px;
 	font-size: 18px;
 	color: #FFFFFF;
+	text-decoration: none;
 }
 .information img{
 	padding-right: 12px;
@@ -98,17 +101,18 @@ table {
 }
 .content h3{
 	padding-bottom: 48px;
+	font-family:MicrosoftJhengHeiRegular;
 	font-size: 24px;
 	color: #1736DC;
 }
 .content-item{
 	display: flex;
 	justify-content: center;
-	position: relative;
 }
 .content-item h4{
 	padding-top: 25px;
 	padding-bottom: 26px;
+	font-family: MicrosoftJhengHeiRegular;
 	font-size: 18px;
 	color: #4A4A4A;
 }
@@ -116,6 +120,7 @@ table {
 	padding-bottom: 35px;
 }
 .content-item li{
+	font-family: MicrosoftJhengHeiRegular;
 	font-size: 10px;
 	color: #4A4A4A;
 	line-height: 18px;
@@ -125,95 +130,60 @@ table {
 	padding-right: 21px;
 	padding-left: 45px;
 }
-.content-item-1{
+.content-item-1,.content-item-2,.content-item-3{
 	width:284px;
 	background: #FFFFFF;
 	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
 	border-radius: 6px;
 	margin-right: 17px;
+	border-bottom:6px solid #F58D23;
 }
 .content-item-2{
-	width:284px;
-	background: #FFFFFF;
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
-	border-radius: 6px;
+	border-bottom:6px solid #539E43;
 }
 .content-item-3{
-	width:284px;
-	background: #FFFFFF;
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
-	border-radius: 6px;
-	margin-left: 17px;
-}
-.color{
-	background: #F58D23;
-	position:absolute;
-	bottom:-1px;
-	width: 284px;
-	height: 6px;
-	border-radius: 0px 0px 6px 6px;
-}
-.color-2{
-	position:absolute;
-	background:#539E43;;
-	width: 284px;
-	height: 6px;
-	border-radius: 0px 0px 6px 6px;
-	bottom:-1px;
-}
-.color-3{
-	background:#6762A6;
-	width: 284px;
-	height: 6px;
-	border-radius: 0px 0px 6px 6px;
-	position:absolute;
-	bottom:-1px;
+	border-bottom:6px solid #6762A6;
 }
 h5{
 	text-align: center;
+	font-family: MicrosoftJhengHeiBold;
 	font-size: 24px;
 	color: #1736DC;
 	padding-bottom: 48px;
 }
 .graph{
-	width: 1024px;
 	height: 590px;
 }
 .graph-1{
 	text-align: center;
-	position: relative;
+
 }
-.wire{
-	background: #D8D8D8 ;
-	width: 2px;
-	height: 514px;
-	position: absolute;
-	right: 511px;
-	top:1px;
+.graph-1::before{
+	content: url(https://i.imgur.com/7KEWdZR.png);
+	display: block;
 }
-.wire-1{
+.graph-1::after{
+	content:'';
 	background: #D8D8D8;
 	border-radius: 2px;
 	width: 46px;
 	height: 4px;
-	position: absolute;
-	right: 489px;
-	bottom:-479px;
+	margin: auto;
+	display: block;
+	margin-top: 46px;
 }
-.box-1{
-	position: absolute;
-	right: 500px;
-	top: 85px;
+.graph-1 ul{
+	position:relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.box-2{
-	position: absolute;
-	right: 500px;
-	top: 228px;
-}
-.box-3{
-	position: absolute;
-	right: 500px;
-	top: 371px;
+.graph-1 ul::before{
+	content:'';
+	position:absolute;
+	background: #D8D8D8;
+	width: 2px;
+	height: 514px;
 }
 .content-graph{
 	background: #FFFFFF;
@@ -221,37 +191,35 @@ h5{
 	border-radius: 10px;
 	width: 260px;
 	height: 136px;
-	position: absolute;
-	right:230px;
-	top: 85px;
-	text-align: left;
-	padding-left: 12px;
-}
-.content-graph-2{
-	background: #FFFFFF;
-	border: 1px solid #FB56BF;
-	border-radius: 10px;
-	width: 260px;
-	height: 136px;
-	position: absolute;
-	left: 230px;
-	top:225px;
 	text-align: right;
 	padding-right: 12px;
+	margin: 0 20px;
 }
-.content-graph-3{
-	background: #FFFFFF;
-	border: 1px solid #FB56BF;
-	border-radius: 10px;
-	width: 260px;
-	height: 136px;
+.graph-1 li:nth-child(even){
+	align-self: flex-start;
+	flex-direction: row-reverse;
+}
+.graph-1 li:nth-child(odd){
+	align-self: flex-end;
+}
+.graph-1 li{
+	display: flex;
+	width: 50%;
+	margin: 10px 0;
+	position: relative;
+}
+.graph-1 li::before{
+	content: url(https://i.imgur.com/BPXlmNk.png);
 	position: absolute;
-	right: 230px;
-	top:370px;
-	text-align: left;
-	padding-left: 12px;
+}
+.graph-1 li:nth-child(even)::before{
+	right: -12px;
+}
+.graph-1 li:nth-child(odd)::before{
+	left: -12px;
 }
 h6{
+	font-family: MicrosoftJhengHeiBold;
 	font-size: 12px;
 	color: #4A4A4A;
 	letter-spacing: 0.53px;
@@ -259,24 +227,28 @@ h6{
 	padding-bottom: 10px;
 }
 h1{
+	font-family: MicrosoftJhengHeiBold;
 	font-size: 12px;
 	color: #8A1737;
 	letter-spacing: 0.53px;
 }
 p{
+	font-family: MicrosoftJhengHeiRegular;
 	font-size: 12px;
 	color: #4A4A4A;
 	letter-spacing: 0.53px;
 	padding-top: 12px;
 	padding-bottom: 10px;
 }
-span{
+.text{
+	font-family: MicrosoftJhengHeiRegular;
 	font-size: 10px;
 	color: #9B9B9B;
 	letter-spacing: 0.44px;
 	line-height: 18px;
 }
 .title{
+	font-family: MicrosoftJhengHeiBold;
 	font-size: 24px;
 	color: #FB56BF;
 	text-align: center;
@@ -288,12 +260,14 @@ span{
 	justify-content: center;
 }
 .menu h3{
+	font-family: MicrosoftJhengHeiBold;
 	font-size: 14px;
 	color: #000000;
 	padding-top: 9px;
 	padding-left: 8px;
 }
 .menu p{
+	font-family: MicrosoftJhengHeiRegular;
 	font-size: 14px;
 	color: #4A4A4A;
 	padding-top: 7px;
@@ -306,13 +280,16 @@ span{
 	margin-right: 16px;
 	width: 284px;
 	height: 213px;
-	position: relative;
-	overflow:hidden;
+	
+}
+.menu-1 a,.menu-2 a,.menu-3 a{
+	display: flex;
+	justify-content: center;
+	padding-top: 35px;
 }
 .menu-1 a{
-	position: absolute;
-	top:37px;
-	left:80px;
+	padding-left: 90px;
+	overflow:hidden;
 }
 .menu-1-1{
 	background: palevioletred;
@@ -326,13 +303,7 @@ span{
 	margin-right: 16px;
 	width: 284px;
 	height: 213px;
-	position: relative;
 }	
-.menu-2 a{
-	position: absolute;
-	top:35px;
-	left:102px;
-}
 .menu-2-2{
 	background: #424242;
 	width:284px;
@@ -346,11 +317,6 @@ span{
 	width: 284px;
 	height: 213px;
 	position:relative;
-}
-.menu-3 a{
-	position:absolute;
-	top:35px;
-	left:102px;
 }
 .menu-3-3{
 	background: #8AD7FA;
@@ -370,6 +336,7 @@ span{
 	cursor: pointer;
 }
 h4{
+	font-family: MicrosoftJhengHeiBold;
 	font-size: 24px;
 	color: #FB56BF;
 	text-align: center;
@@ -389,7 +356,8 @@ h4{
 	margin-left:44px;
 	margin-right: 102px;
 }
-.about p{
+.about li{
+	font-family: MicrosoftJhengHeiRegular;
 	font-size: 14px;
 	color: #4A4A4A;
 	line-height: 26px;
@@ -403,6 +371,7 @@ h4{
 	align-items: center;
 }
 .footer h5{
+	font-family: MicrosoftJhengHeiRegular;
 	font-size: 16px;
 	color: #000000;
 	padding-top: 48px;
